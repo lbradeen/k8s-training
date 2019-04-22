@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: global-config
+data:
+  db.username: root
+  db.password: BkdHnSWHv8
+  db.database: nodedb
+  db.port: "27017"
+  db.host: mongo.shared.svc.cluster.local
+  app.redis_host: redis.shared.svc.cluster.local
+  app.rabbit_host: rabbit
+  app.nats_host: nats
+  app.port: "3000"
+  app.scalable: "true"
